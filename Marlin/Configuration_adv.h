@@ -1035,15 +1035,15 @@
 #if ENABLED(ASSISTED_TRAMMING)
 
   // Define positions for probe points.
-  #define TRAMMING_POINT_XY { {  25, 0 }, { 220,  0 }, { 220, 100 }, { 25, 100 }, { 25, 200 }, { 220, 200 } }
+  #define TRAMMING_POINT_XY { {  110, 110 }, { 24,  26 }, { 195, 26 }, { 194, 196 }, { 24, 196 } }
 
   // Define position names for probe points.
-  #define TRAMMING_POINT_NAME_1 "Front-Left"
-  #define TRAMMING_POINT_NAME_2 "Front-Right"
-  #define TRAMMING_POINT_NAME_3 "Mid-Right"
-  #define TRAMMING_POINT_NAME_4 "Mid-Left"
+  #define TRAMMING_POINT_NAME_1 "Center"
+  #define TRAMMING_POINT_NAME_2 "Front-Left"
+  #define TRAMMING_POINT_NAME_3 "Front-Right"
+  #define TRAMMING_POINT_NAME_4 "Back-Right"
   #define TRAMMING_POINT_NAME_5 "Back-Left"
-  #define TRAMMING_POINT_NAME_6 "Back-Right"
+  //#define TRAMMING_POINT_NAME_6 "Back-Right"
 
   #define RESTORE_LEVELING_AFTER_G35    // Enable to restore leveling setup after operation
   #define REPORT_TRAMMING_MM          // Report Z deviation (mm) for each point relative to the first
@@ -1058,7 +1058,7 @@
    *   M4: 40 = Clockwise, 41 = Counter-Clockwise
    *   M5: 50 = Clockwise, 51 = Counter-Clockwise
    */
-  #define TRAMMING_SCREW_THREAD 30
+  #define TRAMMING_SCREW_THREAD 40
 
 #endif
 
